@@ -1,0 +1,11 @@
+.packages
+.dart_tool/package_config_subset
+.dart_tool/package_config.json
+.dart_tool/version
+.metadata
+.idea/modules.xml
+.idea/workspace.xml
+.idea/libraries/Dart_SDK.xml
+.idea/libraries/KotlinJavaRuntime.xml
+.idea/runConfigurations/main_dart.xml
+build/ios/Runner.build/Release-iphoneos/Runner.build/dgph
