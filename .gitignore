@@ -9,3 +9,5 @@
 .idea/libraries/KotlinJavaRuntime.xml
 .idea/runConfigurations/main_dart.xml
 build/ios/Runner.build/Release-iphoneos/Runner.build/dgph
+pubspec.lock
+.dart_tool/build/entrypoint/.packageLocations
