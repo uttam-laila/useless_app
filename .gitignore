@@ -20,3 +20,4 @@ pubspec.lock
 .dart_tool/build/098d3ee73e6cc294616d3a2e2c3c81ad/asset_graph.json
 .dart_tool/pub/bin/build_runner/build_runner.dart-2.13.0-211.13.beta.snapshot
 .dart_tool/build/fcd1995bc647fb959e82ea360c6c2c9a/asset_graph.json
+build/b833d1434ac84e8132bf64ada8f030ce/gen_localizations.stamp

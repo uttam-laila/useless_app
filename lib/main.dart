@@ -3,7 +3,7 @@ import 'package:injectable/injectable.dart';
 import 'package:provider/provider.dart';
 import 'package:useless_app/application/providers.dart';
 import 'package:useless_app/injection.dart';
-import 'package:useless_app/presentation/useless_screen.dart';
+import 'package:useless_app/presentation/useless_page/useless_screen.dart';
 
 void main() {
   configureInjection(Environment.dev);
@@ -17,11 +17,12 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: List.from(providers),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Useless App',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: UselessScreen(title: 'Useless app Home Page'),
+        home: UselessScreen(),
       ),
     );
   }

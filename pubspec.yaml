@@ -13,6 +13,7 @@ dependencies:
   provider:
   build_runner:
   bloc:
+  flutter_bloc:
 
   cupertino_icons: ^1.0.2
 
