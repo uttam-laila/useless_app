@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:injectable/injectable.dart';
+import 'package:provider/provider.dart';
+import 'package:useless_app/application/providers.dart';
+import 'package:useless_app/injection.dart';
+import 'package:useless_app/presentation/useless_screen.dart';
 
 void main() {
+  configureInjection(Environment.dev);
   runApp(MyApp());
 }
 
@@ -8,33 +14,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Useless App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Useless app Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Text('This is an Useless App...'),
+    return MultiProvider(
+      providers: List.from(providers),
+      child: MaterialApp(
+        title: 'Useless App',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: UselessScreen(title: 'Useless app Home Page'),
       ),
     );
   }

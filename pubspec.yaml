@@ -12,12 +12,16 @@ dependencies:
   injectable:
   provider:
   build_runner:
+  bloc:
 
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  injectable_generator: ^1.0.4
+  json_serializable: ^3.5.1
+  lint: ^1.2.0
 
 
 flutter:
