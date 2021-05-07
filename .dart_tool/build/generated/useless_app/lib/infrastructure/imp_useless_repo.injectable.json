@@ -1,0 +1,1 @@
+[{"type":{"import":"package:useless_app/domain/useless_repo.dart","name":"UselessRepository","isNullable":false},"typeImpl":{"import":"package:useless_app/infrastructure/imp_useless_repo.dart","name":"ImplementUselessRepository","isNullable":false},"isAsync":false,"preResolve":false,"injectableType":2,"environments":[],"dependencies":[],"constructorName":""}]

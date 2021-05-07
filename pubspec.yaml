@@ -23,7 +23,12 @@ dev_dependencies:
   injectable_generator: ^1.0.4
   json_serializable: ^3.5.1
   lint: ^1.2.0
+  flutter_launcher_icons:
 
+flutter_icons:
+  image_path: "assets/icon/icon.png" 
+  android: true
+  ios: true
 
 flutter:
   uses-material-design: true
